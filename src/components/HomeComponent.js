@@ -221,10 +221,12 @@ function Home(props){
         $(".gridBox").addClass("disabled");
         if(winner === 1)
         {
+            setImage("./winner.jpg");
             setResult("Player-1 Wins!!!");
         }
         else if(winner === 2)
         {
+            setImage("./winner.jpg");
             setResult("Player-2 Wins!!!");
         }
         else
