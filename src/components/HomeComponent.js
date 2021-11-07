@@ -73,7 +73,7 @@ function Home(props){
 
         toggleModal(false);
     }
-
+    
     useEffect(() => {
        
         // CHECK WINNING STATE - BRUTE FORCE
@@ -214,7 +214,7 @@ function Home(props){
             switchTurn(1);
             changeValue('O');
         }
-
+        // eslint-disable-next-line
     }, [grid]);
 
     useEffect(() => {
