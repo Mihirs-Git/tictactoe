@@ -255,9 +255,11 @@ function Home(props){
                 <h1 className="pt-4 pb-4">Tic Tac Toe</h1>
 
                 <div className="row">
-                    <div className="col-12">
-                        <button onClick={newGame} className="btn btn-success btn-lg fa fa-plus m-5">{' '}New Game</button>
-                        <button onClick={reset} className="btn btn-warning btn-lg text-white fa fa-undo m-5">{' '}Reset Scores</button>
+                    <div className="col-6">
+                        <button onClick={newGame} className="btn btn-success btn-lg fa fa-plus m-5 mr-0">{' '}New Game</button>
+                    </div>
+                    <div className="col-6">
+                        <button onClick={reset} className="btn btn-warning btn-lg text-white fa fa-undo m-5 ml-0">{' '}Reset Scores</button>
                     </div>
                 </div>
                 <div className="row">
@@ -282,17 +284,17 @@ function Home(props){
                     </div>
                 </div>
                 <div className="row p-5 text-center">
-                    <div className="col-6 score">
-                        <h4> {score_p1} </h4>
+                    <div className="col-12 col-md-6 order-1 order-md-1 score">
+                        <h3 className="pl-md-3"> {score_p1} </h3>
                     </div>
-                    <div className="col-6 score">
-                        <h4> {score_p2} </h4>
+                    <div className="col-12 col-md-6 order-3 order-md-2 score mt-5 mt-md-0">
+                        <h3> {score_p2} </h3>
                     </div>
-                    <div className="col-6 players">
-                       <h3> Player 1 - O </h3>
+                    <div className="col-12 col-md-6 order-2 order-md-3 players">
+                       <h4 className="pl-md-3"> Player 1 - O </h4>
                     </div>
-                    <div className="col-6 players">
-                        <h3> Player 2 - X </h3>
+                    <div className="col-12 col-md-6 order-4 order-md-4 players">
+                        <h4> Player 2 - X </h4>
                     </div>
                 </div>
             </div>
